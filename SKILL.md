@@ -120,6 +120,30 @@ description: |
 
 ---
 
+## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
+
+| 항목 | 정의 |
+|------|------|
+| RULE | 산출물·대화 = 인간 언어. 작업 라벨 ZERO. (1만 페이지 1단어 = FAIL) |
+| 판정 | "이 단어, 이 대화 밖 사람이 사전 없이 읽을 수 있나?" NO → 작업 라벨 → 금지 |
+| ALLOW | 업계 전문용어(NDA·SPA·SHA·MSA·DPA·CB·RCPS·SAFE·MFN·BATNA·ZOPA·IP·SaaS·GDPR·PIPA) · 고유명사 · 법조문(민법·상법·약관법·공정거래법·하도급법·대리점법·가맹법·개인정보보호법·금융지주회사법) |
+| CONVERT | 라벨 발견 → 실명·평문 풀어쓰기. 예) "L1~L5 5층" → 실제 층 이름(의무·리스크·플레이북·종료·한국법) / "Tier1/2/3" → "허용·협상·마지노선" 평문 / "Red/Yellow/Green" → "중대·주의·통상" 평문 / "D1~D7" → 실제 도메인 명 |
+| SELF_CHECK | ⑤ 산출물 직전 단계에서 자체 스캔. 1개라도 발견 = 차단·재작성. paper-engine cascade 경유 시 INV 13 자동 적용 |
+
+---
+
+## 🚨 MUST cascade → paper-engine (절대규칙)
+
+**이 스킬의 모든 리포트·산출물 = paper-engine 허브 MUST 경유.** 단독 md/html 출력 = FAIL.
+
+- **진입점:** 모드별 분석 완료 후, 산출물 생성 직전 paper-engine 발동
+- **paper-engine 책임:** MODE_S/M/L · NYT구조 · 3패스삭제 · 4항밀도QC · design-skill cascade 강제
+- **DEFAULT_RENDER = 순수 마크다운:** `.md` 산출 시 `<div>`·`<span>`·`style=` 등 인라인 HTML **전면 금지**. 헤더·불릿·표·인용(`>`)·이모지만 허용
+- **예외:** 사용자가 `"HTML로"·"박스로"·"벤토로"·"시각화"·"카드로"` 명시시에만 html-div-style·apple-box-design cascade 경유
+- **위반 감지:** md 파일에 `<div style>`·`<span style>` 삽입 = 절대규칙 #8 위반 → 재작성
+
+---
+
 ## Gotchas
 
 | 함정 | 대응 |
