@@ -1,4 +1,4 @@
-# CHANGELOG — contract-reviewer
+# CHANGELOG — contract-consulting
 
 ## v1.0.0 (2026-04-20)
 **신규 스킬 빌드.**
