@@ -14,7 +14,28 @@ description: |
 
 계약서를 **5층 × 7도메인 × 4모드 + α 7엔진**으로 검토하는 진단·설계·레드라인·카운터 엔진. **법률자문 대체 ✗** — 검토·협상 준비·리스크 스코어링(과징금 기대값·무효확률)까지. 변호사 최종검토 필수. **포지셔닝: 김앤장 10배 증폭기** — 코퍼스 깊이·사건번호 인용·신뢰도 등급으로 대형로펌 의견서 수준 재현.
 
+
+## Skill Boundaries
+
+- **하는 것** — 계약 컨설팅 5층×7도메인×4모드 + α 7엔진(처분례·판례룰·벤치마크·규제레이더·협상레버·분쟁시나리오·각주).
+- **안 하는 것** — 협상시뮬·복기(→negotiation-skill), 카피톤(→copywriting-skill), 재무모델(→financial-model), BP(→bp-guide), 사업전략(→biz-skill).
+
 ---
+
+## When to Use
+
+- 사용자가 "검토해줘", "리뷰해줘", "레드라인 쳐줘", "진단해줘", "카운터 짜줘" 같은 표현으로 발동
+- 계약서 받았을 때, 텀시트 검토 직전, 김앤장·태평양·광장 측 redline 회신 받았을 때.
+- **안 쓸 때** — 협상시뮬·복기(→negotiation-skill), 카피톤(→copywriting-skill), 재무모델(→financial-model), BP(→bp-guide), 사업전략(→biz-skill).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+
 
 ## 절대 규칙
 
@@ -213,7 +234,38 @@ description: |
 
 ---
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/contract-consulting_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 리뷰메모로, 레드라인으로, 플레이북으로, 카운터plan으로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/contract-consulting/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/L1_obligation.md` | L1 obligation | 해당 단계 진입 시 |
+| `references/L2_risk.md` | L2 risk | 해당 단계 진입 시 |
+| `references/L3_playbook.md` | L3 playbook | 해당 단계 진입 시 |
+| `references/L4_exit.md` | L4 exit | 해당 단계 진입 시 |
+| `references/L5_korea.md` | L5 korea | 해당 단계 진입 시 |
+| `references/redflag_catalog.md` | redflag catalog | 해당 단계 진입 시 |
+| `references/redflag_korea.md` | redflag korea | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `negotiation-skill`
+- 후속 작업 → `copywriting-skill`
+- 후속 작업 → `financial-model`
+- 후속 작업 → `bp-guide`
+- 후속 작업 → `biz-skill`
+
+## Failure Modes (Gotchas)
 
 | 함정 | 대응 |
 |------|------|
