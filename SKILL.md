@@ -1,7 +1,7 @@
 ---
 name: contract-consulting
 description: |
-  계약 컨설팅 5층×7도메인×4모드 + α 7엔진(처분례·판례룰·벤치마크·규제레이더·협상레버·분쟁시나리오·각주). Playbook 3-Tier·Redflag 22종·신뢰도 상중하·과징금 기대값·무효확률. 한국법 디폴트. 김앤장 10배 증폭기.
+  계약 컨설팅 v2.2 5층×8도메인×4모드 + α 7엔진(처분례·판례룰·벤치마크·규제레이더·협상레버·분쟁시나리오·각주). Playbook 3-Tier·Redflag 24종 자동스캐너·신뢰도 상중하·과징금 기대값·무효확률. 한국법 디폴트(2026.5 갱신 — 노란봉투법·다크패턴·하도급 부당특약 무효·AI 기본법·집중투표 의무화·자사주 1년 소각·이사충실의무 일반주주 확대·Pillar2 GloBE). D8 AI계약 도메인 신설. KAJ·태평양·광장 카운터 28패턴 확장 코퍼스. 김앤장 10배 증폭기.
   P1: 계약검토, 계약리뷰, 계약컨설팅, contract review, 레드라인, redline, playbook, NDA, SPA, MSA, DPA, SHA, RCPS, SAFE, MFN, MAC, redflag, 처분례, 판례룰, 벤치마크, 규제레이더, 협상레버, 분쟁시나리오, 각주엔진, 무효확률, 과징금기대값, 김앤장, KAJ카운터, 대형로펌, indemnity, BATNA, ZOPA, 진술보장.
   P2: 검토해줘, 리뷰해줘, 레드라인 쳐줘, 진단해줘, 카운터 짜줘, 각주 달아줘.
   P3: contract review, redline, KAJ counter, judicial corpus, footnote engine.
@@ -47,7 +47,7 @@ description: |
 | 4 | **한국 디폴트 True** — 한국법 오버레이(L5) 자동 On. 해외법 준거 명시 시만 Off | 사용자 절대 다수 한국 |
 | 5 | **5층 독립 호출 가능** — "Redflag만"·"L5 한국법만"·"α2 판례룰만" 단독 실행 | 강제 cascade 비효율 |
 | 6 | **PREFLIGHT 4체크** — 모드·도메인·계약서 텍스트·갑/을 입장 확인 | 산출물 형태 결정 |
-| 7 | **최신 법령 시점 명시** — 2025-2026 개정 다수(상법 제382조의3·개인정보보호법 시행령·하도급법·전자상거래법 다크패턴·노란봉투법). 검토 시점·시행일 verbatim 필수 | 법령 변동 빠름 |
+| 7 | **최신 법령 시점 명시** — 2025-2026 개정 다수 (상법 §382의3 2025.7.3·자사주 1년 소각·물적분할 주매권·집중투표 2026.9.10·노란봉투법 2026.3.10·다크패턴 2025.2.14·하도급 부당특약 무효 2025.3.13·중대재해 5인↑ 2024.1.27·AI 기본법 2026.1.22·개인정보 시행령 2025.10.2). 검토 시점·시행일 verbatim 필수 | 법령 변동 빠름 |
 | 8 | **α 코퍼스 무결성** — 사건번호·법조문 verbatim 인용. LLM 생성 사건번호 ✗. corpus_id 필수. 검증 안되면 "검증필요" 태깅 | Hallucination 방어 |
 | 9 | **신뢰도 등급 강제** — α 근거에 [신뢰도: 상/중/하] 부착. 공식DB·대법원·공정위=상, 하급심·로펌의견=중, 커뮤니티·언론=하 | 사용자 검증권 |
 | 10 | **KAJ 카운터 모드 (M4)** — 대형로펌 redline에 대해 패턴 식별 → Tier1/2/3 카운터 + 레버리지 + 시장표준 인용 | 김앤장 대적 본질 |
@@ -83,7 +83,7 @@ description: |
 
 **국제 12종:** Uncapped Liability·Uncapped Indemnity·Liquidated Damages Penalty·Unilateral Termination·MFN·Change of Control Consent·IP Broad Assignment·Exclusivity·Arbitration Seat 편측·Perpetual Confidentiality·Unilateral Amendment·Non-Compete 과다
 
-**한국 10종:** 약관규제법 14유형 무효·거래상지위남용·하도급법 부당특약·대리점법 갱신거절·가맹사업법 광고비 전가·개인정보보호법 §17 위반 위탁·개정상법 §382조의3 위반·다크패턴 6유형(전자상거래법 §21-2)·중대재해 비용전가·노란봉투법 사용자 책임 회피
+**한국 12종 (2026 확장):** 약관규제법 14유형 무효·거래상지위남용·**하도급법 부당특약 (2025.3.13 §3의4③ 신설로 즉시 무효)**·대리점법 갱신거절·가맹사업법 광고비 전가·개인정보보호법 §17 위반 위탁·**개정상법 §382조의3 위반 (2025.7.3 시행 — 주주 충실의무)**·**다크패턴 5유형 (전자상거래법 §21의2, 2025.2.14 시행)**·중대재해 비용전가 (5인↑ 전면 적용 2024.1.27)·**노란봉투법 사용자 책임 회피 (2026.3.10/13 시행)**·**자사주 미소각 의무 위반 (2025 본회의 통과 — 취득 1년 내)**·**AI 학습데이터 출처 미고지 (AI 기본법 2026.1.22)**
 
 ### ② 5층 적용
 
@@ -126,9 +126,20 @@ description: |
 - 과징금 기대값: `E[X] = Σ(빈도 × 평균액 × 적합도)`
 - 무효확률: Base 60% ± 가감 (도메인별 baseline `→ a2_precedent_rules.md`)
 
-### ⑤ 한국 오버레이 (L5, 디폴트 True)
+### ⑤ 한국 오버레이 (L5, 디폴트 True) — 2026.5 갱신
 
-`→ references/L5_korea.md` 8축: 민법계약편·상법(2026.7.23 제382조의3 시행)·약관규제법·공정거래·3법(하도급·대리점·가맹)·개인정보보호법(2025.3.13 시행령)·다크패턴(전자상거래법 §21-2, 2025.2.14)·노동조합법(2026.3.10 노란봉투법)
+`→ references/L5_korea.md` 10축:
+- K-A 민법계약편 (제398 손배예정·제544 해제 최고)
+- K-B 상법 일반 (제58·제64 5년 시효)
+- K-C 약관규제법 14유형 무효
+- K-D 공정거래법 (제45 불공정·2024.12 심사지침 확대)
+- K-E 3법 (하도급·대리점·가맹) — **하도급 부당특약 무효 2025.3.13 통과**
+- K-F 개인정보보호법 (2025.10.2 시행령·DPA 9항목·전송요구권)
+- K-G 개정상법 — **§382의3 (2025.7.3) + 자사주 1년 소각 (2025.2.25 통과) + 물적분할 주매권 + 집중투표·감사위원 분리 (2026.9.10 시행)**
+- K-H **노란봉투법** (2026.3.10/13 시행 — 사용자 확대)
+- K-I **다크패턴** (전자상거래법 §21의2, 2025.2.14 시행)
+- K-J **중대재해처벌법** (5인↑ 전면 2024.1.27, 2026 집행 강화)
+- K-K (옵션) **AI 기본법** (2026.1.22 시행) — D5 도메인 가산
 
 ### ⑥ 산출물
 
@@ -253,6 +264,16 @@ description: |
 | `references/L5_korea.md` | L5 korea | 해당 단계 진입 시 |
 | `references/redflag_catalog.md` | redflag catalog | 해당 단계 진입 시 |
 | `references/redflag_korea.md` | redflag korea | 해당 단계 진입 시 |
+| `references/judicial/cases-2025-2026.md` | 2025-2026 신규 판례·처분례 (진술보장·MAC·물적분할·노란봉투·AI학습·개인정보·하도급) | 판례 인용 시 |
+| `references/alpha/a4_radar.md` | 규제 레이더 — 분기별 갱신 메커니즘 + 시행완료/예정/입법예고 매트릭스 | 매분기 첫 주·계약 작성 직전 |
+| `references/domains/D8_ai_contract.md` | AI 계약 도메인 5종 (학습데이터·LLM API·위탁개발·영향평가·생성형 콘텐츠) + Redflag 12 | AI 관련 계약 진입 시 |
+| `references/templates/M1-review-memo.md` | 리뷰메모 템플릿 | M1 모드 실행 시 |
+| `references/templates/M2-playbook.md` | 3-Tier Playbook 템플릿 | M2 모드 실행 시 |
+| `references/templates/M3-redline.md` | Redline 템플릿 (조항별 수정 + 사유) | M3 모드 실행 시 |
+| `references/templates/M4-counter-plan.md` | 카운터 플랜 템플릿 (KAJ 회신 대응) | M4 모드 실행 시 |
+| `references/kaj-counter/patterns-expanded.md` | KAJ·태평양·광장 28패턴 확장 코퍼스 (상대 발화 → 카운터 → 시장표준 → 판례) | KAJ redline 회신 시 |
+| `scripts/redflag-scanner.py` | 계약서 텍스트 → 24종 redflag 자동 grep + 🔴🟠🟡 태깅 + 권고 | 1차 스크리닝 |
+| `evals/golden-cases.md` | SHA·NDA·SPA·SaaS·하도급 5 골든 케이스 | autoloop·skill-doctor 연동 |
 
 
 ## Next Phase
