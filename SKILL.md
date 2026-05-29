@@ -1,13 +1,7 @@
 ---
 name: contract-consulting
 description: |
-  계약 컨설팅 v2.2 5층×8도메인×4모드 + α 7엔진(처분례·판례룰·벤치마크·규제레이더·협상레버·분쟁시나리오·각주). Playbook 3-Tier·Redflag 24종 자동스캐너·신뢰도 상중하·과징금 기대값·무효확률. 한국법 디폴트(2026.5 갱신 — 노란봉투법·다크패턴·하도급 부당특약 무효·AI 기본법·집중투표 의무화·자사주 1년 소각·이사충실의무 일반주주 확대·Pillar2 GloBE). D8 AI계약 도메인 신설. KAJ·태평양·광장 카운터 28패턴 확장 코퍼스. 김앤장 10배 증폭기.
-  P1: 계약검토, 계약리뷰, 계약컨설팅, contract review, 레드라인, redline, playbook, NDA, SPA, MSA, DPA, SHA, RCPS, SAFE, MFN, MAC, redflag, 처분례, 판례룰, 벤치마크, 규제레이더, 협상레버, 분쟁시나리오, 각주엔진, 무효확률, 과징금기대값, 김앤장, KAJ카운터, 대형로펌, indemnity, BATNA, ZOPA, 진술보장.
-  P2: 검토해줘, 리뷰해줘, 레드라인 쳐줘, 진단해줘, 카운터 짜줘, 각주 달아줘.
-  P3: contract review, redline, KAJ counter, judicial corpus, footnote engine.
-  P4: 계약서 받았을 때, 텀시트 검토 직전, 김앤장·태평양·광장 측 redline 회신 받았을 때.
-  P5: 리뷰메모로, 레드라인으로, 플레이북으로, 카운터plan으로, .md로.
-  NOT: 협상시뮬·복기(→negotiation-skill), 카피톤(→copywriting-skill), 재무모델(→financial-model), BP(→bp-guide), 사업전략(→biz-skill).
+  계약 컨설팅 v2.2 5층×8도메인×4모드 + α 7엔진(처분례·판례룰·벤치마크·규제레이더·협상레버·분쟁시나리오·각주). Playbook 3-Tier·Redflag 24종 자동스캐너·신뢰도 상중하·과징금 기대값·무효확률. 트리거: 계약검토, 계약리뷰, 계약컨설팅, contract review, 레드라인, redline, playbook, NDA, SPA, MSA, DPA, SHA, RCPS, SAFE, MFN, MAC, redflag, 처분례, 판례룰, 벤치마크, 규제레이더, 협상레버, 분쟁시나리오, 각주엔진. NOT: 협상시뮬·복기(→negotiation-skill), 카피톤(→copywriting-skill), 재무모델(→financial-model), BP(→bp-guide), 사업전략(→biz-skill).
 ---
 
 # Contract Consulting Engine v2.0 — "Regulatory Alpha"
